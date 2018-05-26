@@ -27,7 +27,7 @@ class Ship(Sprite):
         self.moving_right = False
         self.moving_left = False
 
-    def update(self):
+    def update(self, *args):
         """Update the ship's position based on the moment flag."""
        # Update the ship's center value, not the rect.
         if self.moving_right and self.rect.right < self.screen_rect.right:
